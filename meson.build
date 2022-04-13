@@ -137,7 +137,7 @@ elif host_system == 'linux'
   os_deps += [dependency('threads')]
   have_posix = true
 elif host_system == 'windows'
-  platform_cflags += ['-DWEBRTC_WIN', '-D_WIN32', '-U__STRICT_ANSI__']
+  platform_cflags += ['-DWEBRTC_WIN', '-D_WIN32', '-U__STRICT_ANSI__', '-D_WINSOCKAPI_', '-DNOMINMAX', '-D_USE_MATH_DEFINES']
   # this one is for MinGW to get format specifiers from inttypes.h in C++
   platform_cflags += ['-D__STDC_FORMAT_MACROS=1']
   os_deps += [cc.find_library('winmm')]
