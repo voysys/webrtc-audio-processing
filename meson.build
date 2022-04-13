@@ -20,7 +20,7 @@ minor_version = version_split[1]
 apm_major_version = major_version
 apm_minor_version = minor_version
 apm_version = apm_major_version + '.' + apm_minor_version
-apm_project_name = 'webrtc-audio-processing-' + apm_major_version
+apm_project_name = 'webrtc-audio-processing'
 
 ac_major_version = major_version
 ac_minor_version = minor_version
