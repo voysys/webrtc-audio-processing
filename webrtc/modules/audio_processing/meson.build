@@ -193,7 +193,7 @@ install_headers(webrtc_audio_processing_include_headers,
     subdir: join_paths(include_subdir, 'modules', 'audio_processing', 'include')
 )
 
-libwebrtc_audio_processing = library(apm_project_name,
+libwebrtc_audio_processing = static_library('webrtc-audio-processing',
     webrtc_audio_processing_sources,
     dependencies: [
       base_dep,
