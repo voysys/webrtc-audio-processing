@@ -41,7 +41,6 @@ libwebrtc_audio_coding = library(ac_project_name,
     include_directories: webrtc_inc,
     c_args: common_cflags,
     cpp_args: common_cxxflags,
-    soversion: ac_minor_version,
     install: true
 )
 
