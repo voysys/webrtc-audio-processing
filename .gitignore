@@ -8,4 +8,5 @@
 build/
 depcomp
 install/
-subprojects/*/
+subprojects/packagecache/
+subprojects/abseil-cpp-20211102.0/
