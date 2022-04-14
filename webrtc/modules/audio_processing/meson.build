@@ -208,7 +208,6 @@ libwebrtc_audio_processing = static_library('webrtc-audio-processing',
     include_directories: webrtc_inc,
     c_args: common_cflags + apm_flags,
     cpp_args: common_cxxflags + apm_flags,
-    soversion: apm_minor_version,
     install: true
 )
 
